@@ -273,34 +273,4 @@
     }
   }
   
-  /* ===== DARK MODE SUPPORT ===== */
-  @media (prefers-color-scheme: dark) {
-    .about {
-      background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
-    }
-    
-    .section-title {
-      color: #f3f4f6;
-    }
-    
-    .about-description p {
-      color: #d1d5db;
-    }
-    
-    .experience-card {
-      background: #374151;
-      border-color: #4b5563;
-    }
-    
-    .role {
-      color: #f3f4f6;
-    }
-    
-    .company, .duration {
-      color: #9ca3af;
-    }
-    
-    .responsibilities li {
-      color: #d1d5db;
-    }
-  }
+  
