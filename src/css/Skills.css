@@ -315,27 +315,3 @@
     }
   }
   
-  /* Dark mode support */
-  @media (prefers-color-scheme: dark) {
-    .skills {
-      background: #111;
-    }
-    
-    .skill-category {
-      background: #222;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-    }
-    
-    .skill-title {
-      color: #fff;
-    }
-    
-    .section-subtitle,
-    .progress-info {
-      color: #ccc;
-    }
-    
-    .progress-container {
-      background: #333;
-    }
-  }
