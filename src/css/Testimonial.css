@@ -1,0 +1,116 @@
+.testimonials {
+    padding: 4rem 1rem;
+    background: #f9f9f9;
+  }
+  
+  .testimonials .container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #222;
+    text-align: center;
+  }
+  
+  .testimonial-wrapper-with-arrows {
+    position: relative;
+  }
+  
+  .testimonials-wrapper {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    padding: 0 2rem; /* for arrow spacing */
+  }
+  
+  .testimonial-card {
+    flex: 0 0 28%; /* 3 per row desktop */
+    background: #fff;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    text-align: left;
+    scroll-snap-align: start;
+  }
+  
+  .testimonial-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    object-fit: cover;
+    border: 3px solid #f97316;
+  }
+  
+  .testimonial-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .testimonial-role {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .testimonial-feedback {
+    font-size: 1rem;
+    color: #444;
+    font-style: oblique;
+    line-height: 1.6;
+  }
+  
+  /* Arrows */
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #f97316;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .arrow:hover {
+    background: #ea580c;
+  }
+  
+  .left-arrow {
+    left: 0;
+  }
+  
+  .right-arrow {
+    right: 0;
+  }
+  
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .testimonial-card {
+      flex: 0 0 50%; /* 2 per row tablet */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .testimonial-card {
+      flex: 0 0 100%; /* 1 per view mobile */
+    }
+  }
+  

@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Sora:wght@400;600&display=swap');
+
+
+:root {
+  --primary-color: #f97316;
+  --dark-color: #1f2937; /* gray-800 */
+  --light-color: #f9fafb; /* gray-50 */
+}
+
+body {
+  margin: 0;
+  font-family: 'Questrial', sans-serif;
+  background: var(--light-color);
+  color: var(--dark-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

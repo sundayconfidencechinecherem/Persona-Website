@@ -1,0 +1,89 @@
+.contact {
+  background: linear-gradient(135deg, #fff7ed 0%, #fed7aa 100%);
+  padding: 3rem 1rem;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;              /* ✅ make info + form side by side */
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+/* Left (info) */
+.contact-info {
+  flex: 1;                    /* takes half */
+}
+
+.contact-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.contact-text {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.contact-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+.contact-item svg {
+  width: 24px;
+  height: 24px;
+  color: #f97316;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.contact-item a:hover {
+  color: #f97316;
+}
+
+/* Right (form) */
+.contact-form {
+  flex: 1;                   /* ✅ form takes other half */
+  display: flex;
+}
+
+.contact-form form {
+  width: 100%;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;   /* ✅ stack vertically on mobile */
+    text-align: left;
+  }
+
+  .contact-form {
+    margin-top: 2rem;
+    width: 100%;
+  }
+
+  .contact-items {
+    align-items: left;
+  }
+}

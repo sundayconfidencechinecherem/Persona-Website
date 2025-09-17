@@ -1,0 +1,134 @@
+/* ContactForm.css */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 15px;
+    z-index: 1;
+    color: #666;
+  }
+  
+  .input-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 15px 15px 15px 50px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+  }
+  
+  .contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: #f97316;
+    box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.1);
+    background: #fff;
+  }
+  
+  .btn.primary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: #f97316;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn.primary-btn:hover {
+    background: #ea580c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(249, 115, 22, 0.2);
+  }
+  
+  .send-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  #thank-you {
+    display: none;
+    text-align: center;
+    padding: 1rem;
+    background: #10b981;
+    color: white;
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+  
+  /* Form success state */
+  .contact-form.submitted #thank-you {
+    display: block;
+    
+  }
+  .success-message{
+    color: #f97316;
+  }
+  .error-message{
+    color: red;
+  }
+  /* Responsive adjustments */
+  @media (max-width: 576px) {
+    .contact-form input,
+    .contact-form textarea {
+      padding: 12px 12px 12px 40px;
+    }
+    
+    .input-icon {
+      left: 12px;
+    }
+    
+    .input-icon svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  
+  /* Dark mode support */
+  @media (prefers-color-scheme: dark) {
+    .contact-form input,
+    .contact-form textarea {
+      background: #333;
+      border-color: #444;
+      color: #fff;
+    }
+    
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      background: #222;
+      border-color: #f97316;
+    }
+    
+    .input-icon {
+      color: #999;
+    }
+  }
