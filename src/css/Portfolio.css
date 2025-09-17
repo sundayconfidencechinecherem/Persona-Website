@@ -252,36 +252,3 @@
     }
   }
   
-  /* ===== DARK MODE SUPPORT ===== */
-  @media (prefers-color-scheme: dark) {
-    .portfolio {
-      background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
-    }
-    
-    .section-title {
-      color: #f3f4f6;
-    }
-    
-    .section-subtitle {
-      color: #9ca3af;
-    }
-    
-    .project-card {
-      background: #374151;
-      border: 1px solid #4b5563;
-    }
-    
-    .project-title {
-      color: #f3f4f6;
-    }
-    
-    .project-description {
-      color: #d1d5db;
-    }
-    
-    .tech-tag {
-      background: linear-gradient(135deg, #7c2d12 0%, #9a3412 100%);
-      color: #fdba74;
-      border-color: #9a3412;
-    }
-  }
