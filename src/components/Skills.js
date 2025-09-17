@@ -39,35 +39,37 @@ function Skills() {
     const sectionRef = useRef(null);
     const progressBarsRef = useRef([]);
   
-    useEffect(() => {
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) {
-            setIsVisible(true);
-            
-            // Animate progress bars with delay
-            progressBarsRef.current.forEach((bar, index) => {
-              if (bar) {
-                setTimeout(() => {
-                  bar.style.width = bar.getAttribute('data-progress') + '%';
-                }, index * 200);
-              }
-            });
+   useEffect(() => {
+  const currentSection = sectionRef.current; // store current value
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+
+        // Animate progress bars with delay
+        progressBarsRef.current.forEach((bar, index) => {
+          if (bar) {
+            setTimeout(() => {
+              bar.style.width = bar.getAttribute('data-progress') + '%';
+            }, index * 200);
           }
-        },
-        { threshold: 0.3 }
-      );
-  
-      if (sectionRef.current) {
-        observer.observe(sectionRef.current);
+        });
       }
-  
-      return () => {
-        if (sectionRef.current) {
-          observer.unobserve(sectionRef.current);
-        }
-      };
-    }, []);
+    },
+    { threshold: 0.3 }
+  );
+
+  if (currentSection) {
+    observer.observe(currentSection);
+  }
+
+  return () => {
+    if (currentSection) { // use stored variable
+      observer.unobserve(currentSection);
+    }
+  };
+}, []);
+
     return (
         <section id="skills" className="skills" ref={sectionRef}>
           <div className="container">
