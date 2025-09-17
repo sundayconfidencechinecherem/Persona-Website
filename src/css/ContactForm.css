@@ -113,22 +113,3 @@
     }
   }
   
-  /* Dark mode support */
-  @media (prefers-color-scheme: dark) {
-    .contact-form input,
-    .contact-form textarea {
-      background: #333;
-      border-color: #444;
-      color: #fff;
-    }
-    
-    .contact-form input:focus,
-    .contact-form textarea:focus {
-      background: #222;
-      border-color: #f97316;
-    }
-    
-    .input-icon {
-      color: #999;
-    }
-  }
