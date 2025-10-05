@@ -1,17 +1,18 @@
-import cyberimage1 from "../assets/cyberimage1.webp";
-import codeimag1 from "../assets/codeimage1.jpg";
-import alx from "../assets/alx1.png";
-import collaboration from "../assets/collaboration.png";
+import scc1 from "../assets/sconfidence1.jpg";
+import pf from "../assets/pf.png";
+import scc from "../assets/scc.jpeg";
+import ciscoBadge from "../assets/ciscobadge.png";
+import ciscoCert from "../assets/cisco_cert_cs.jpeg";
 
 
 export const blogPosts = [
     {
       id: 1,
-      title: "My Transition into Cybersecurity: A New Chapter",
-      date: "September 15, 2025",
+      title: " A New Chapter",
+      date: "August 22, 2025",
       readTime: "6 min read",
       category: "Cybersecurity",
-      image: cyberimage1,
+      image: scc1,
       excerpt: "For the past few years, I've been deeply immersed in software development, building web applications and digital solutions for businesses...",
       content: `
         <p>Over the past few years, I’ve been deeply immersed in software development, building web applications and digital solutions for businesses. I’ve enjoyed creating user-friendly interfaces, solving complex programming challenges, and seeing ideas come to life in functional systems. But while coding and development have been my day-to-day, I’ve always been fascinated by the security aspects of technology..</p>
@@ -45,10 +46,10 @@ export const blogPosts = [
     {
       id: 2,
   title: "My Professional Foundation Journey",
-  date: "August 25, 2025",
+  date: "september 30, 2025",
   readTime: "5 min read",
   category: "Soft Skill",
-  image: alx,
+  image: pf,
   excerpt: "As a software developer, I understand that technical skills are just one piece of the puzzle. To truly...",
   content: `
     <p>As a software developer, I understand that technical skills are just one piece of the puzzle. To truly excel in today's dynamic tech landscape, it's essential to cultivate a robust set of professional skills. That's why I embarked on the ALX Professional Foundations programme—a comprehensive 3-month course designed to equip young professionals with the critical soft skills needed to thrive in the tech industry..</p>
@@ -57,15 +58,16 @@ export const blogPosts = [
     
     <p>Over the course of the programme, I delved into eight key meta-skills that are fundamental for professional success:</p>
     <ul>
-      <li>Leading Self/li>
-      <li>Leading Others/li>
-      <li>Critical thinking/li>
-      <li>Quantitative Reasoning/li>
-      <li>Entreprenuerial Thinking/li>
-      <li>Communicating for Impact/li>
-      <li>Managing Complex Tasks/li>
-      <li>Tech Ecosystem e.t.c </li>
-    </ul>
+    <li>Leading Self</li>
+    <li>Leading Others</li>
+    <li>Critical thinking</li>
+    <li>Quantitative Reasoning</li>
+    <li>Entreprenuerial Thinking</li>
+    <li>Communicating for Impact</li>
+    <li>Managing Complex Tasks</li>
+    <li>Tech Ecosystem e.t.c </li>
+  </ul>
+  
     
     <h2>Preparing for the Next Step</h2>
 
@@ -77,42 +79,12 @@ export const blogPosts = [
   tags: ["Professional foundation", "Alx", "Soft skills", "Career in Tech", "ALXPF"]
     },
     {
-      
-     
-      id: 3,
-      title: "Exploring New Tools",
-  date: "August 30, 2025",
-  readTime: "3 min read",
-  category: "Software Development",
-  image: codeimag1,
-  excerpt: "As a software developer, staying current with emerging technologies is not just a preference, It's a necessity...",
-  content: `
-    <p>As a software developer, staying current with emerging technologies is more than a preference, it's a necessity. The tech landscape evolves rapidly, and tools that were cutting-edge a year ago may already be approaching obsolescence. Here's what I've been exploring recently to enhance my development workflow and strengthen my skills.</p>
-    
-    <h2>Next.js for Production Applications</h2>
-    <p>I've been diving deeper into Next.js to build robust, scalable React applications. Its built-in solutions for routing, server-side rendering, and API routes make it incredibly powerful for production-ready applications.</p>
-    
-    <p>Some specific features I'm implementing:</p>
-    <ul>
-      <li>Static Site Generation (SSG) for faster performance</li>
-      <li>Incremental Static Regeneration for dynamic content</li>
-      <li>API routes to handle backend logic within the same project</li>
-      <li>Middleware for authentication and route protection</li>
-    </ul>
-    
-    
-    
-    <p>The journey of a developer is one of continuous growth. I’m excited to keep learning, experimenting, and sharing my experiences as I explore new tools and technologies in software engineering.</p>
-  `,
-  tags: ["React", "TypeScript", "Next.js", "AWS", "Testing"]
-    },
-    {
       id: 4,
       title: "My First Blog Post ",
-      date: "August 22, 2025",
+      date: "July 30, 2025",
       readTime: "4 min read",
       category: "Networking",
-      image: collaboration,
+      image: scc,
       excerpt: "They say the first step is always the hardest. For me, that first step wasn’t coding—it was writing my first...",
       content: `
         <p>They say the first step is always the hardest. For me, that first step wasn’t coding—it was writing my first blog post. As a software developer, I spend most of my time in front of screens, debugging code, or building interfaces. But putting my thoughts into words and sharing them with the world felt like stepping into unknown territory.</p>
@@ -132,4 +104,45 @@ export const blogPosts = [
       `,
       tags: ["First-Blog post", "Collaboration", "Networking", "Trying new things", "Software develop | cyber security"]
     },
+    {
+      id: 5,
+      title: "My Cybersecurity Journey with Cisco",
+      date: "October 5, 2025",
+      readTime: "5 min read",
+      category: "Cybersecurity",
+      image: ciscoCert, 
+      excerpt: "I recently completed the Cisco Cybersecurity Fundamentals course — a major step in understanding how to protect systems and data in our connected world.",
+      content: `
+        <p>Cybersecurity is more than just preventing hacks—it's about protecting people, systems, and data from ever-evolving digital threats. I recently took a bold step in this direction by completing the <strong>Cisco Cybersecurity Fundamentals</strong> course, and it has been an eye-opening experience.</p>
+        
+        <h2>Why I Chose Cybersecurity</h2>
+        <p>Technology is advancing rapidly, and with that comes the growing need for protection against cyber threats. I wanted to understand not just how attacks happen, but how defenders prevent them. Cisco’s fundamentals course gave me that clarity — a strong foundation for anyone serious about digital safety.</p>
+        
+        <h2>Key Lessons I Learned</h2>
+        <ul>
+          <li>The importance of the CIA Triad — Confidentiality, Integrity, and Availability — in securing data.</li>
+          <li>How social engineering, malware, and phishing exploit human behavior.</li>
+          <li>What happens inside a Security Operations Center (SOC) and how incident response teams work.</li>
+          <li>Why consistent security updates and monitoring are critical for both individuals and organizations.</li>
+        </ul>
+        
+        <h2>My Badge Achievement</h2>
+        <p>After completing the course and assessments, I earned the official <strong>Cisco Cybersecurity Fundamentals</strong> badge — a milestone that validates my foundational understanding of cybersecurity principles and practices.</p>
+        <div style="text-align:center; margin: 20px 0;">
+          <img src=${ciscoBadge} alt="Cisco Cybersecurity Fundamentals Badge" style="max-width:200px; border-radius:10px; box-shadow:0 4px 12px rgba(0,0,0,0.1);" />
+        </div>
+        <p>It’s not just a badge; it’s a reminder of how much I’ve learned — from identifying threats to understanding real-world defense strategies.</p>
+        
+        <h2>What’s Next for Me</h2>
+        <p>This is only the beginning of my journey. I plan to build on this knowledge with certifications like <strong>CompTIA Security+</strong> and <strong>CyberOps Associate</strong>, while gaining hands-on experience through platforms like <em>TryHackMe</em> and <em>Hack The Box</em>. My long-term goal is to blend my development experience with security expertise to create safer applications and systems.</p>
+        
+        <blockquote>
+          "Cybersecurity isn’t just about protecting systems — it’s about protecting trust."
+        </blockquote>
+        
+        <p>Completing this course has motivated me to continue learning, stay curious, and contribute to a more secure digital world. Every new skill is a step toward making technology safer for everyone.</p>
+      `,
+      tags: ["Cybersecurity", "Cisco", "Learning Journey", "Technology", "Confidence Chinecherem", "Security Awareness"]
+    },
+    
   ];

@@ -11,7 +11,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
